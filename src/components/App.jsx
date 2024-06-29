@@ -3,7 +3,7 @@ import userData from "../userData.json";
 
 const App = () => {
   return (
-    <main>
+    <>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -11,7 +11,7 @@ const App = () => {
         image={userData.avatar}
         atats={userData.stats}
       />
-    </main>
+    </>
   );
 };
 
