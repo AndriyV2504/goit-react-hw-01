@@ -1,4 +1,4 @@
-import styles from "../Profile/Profile.module.css";
+import styles from "./Profile.module.css";
 
 function Profile({ name, tag, location, image, stats }) {
   return (
@@ -11,17 +11,17 @@ function Profile({ name, tag, location, image, stats }) {
       </div>
 
       <ul className={styles.stats}>
-        <li>
+        <li className={styles.statsLi}>
           <span className={styles.label}>Followers</span>
-          <span>1000</span>
+          <span className={styles.quantity}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>2000</span>
+        <li className={styles.statsLi}>
+          <span className={styles.label}>Views</span>
+          <span className={styles.quantity}>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>3000</span>
+        <li className={styles.statsLi}>
+          <span className={styles.label}>Likes</span>
+          <span className={styles.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
